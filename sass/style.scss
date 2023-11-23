@@ -24,7 +24,7 @@ body {
     
       img{
         padding: 0px 19px 0px 16px;
-        font-family: $font-logo;
+        font-family: $font-logo-titre;
       }
     }
     .header__search {
@@ -190,7 +190,7 @@ body {
     gap: 16px;
 
     h3{
-      font-family:$font-logo;
+      font-family:$font-logo-titre;
       font-size: 18px;
       font-weight: 400;
      

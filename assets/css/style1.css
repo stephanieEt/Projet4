@@ -22,6 +22,8 @@ body main .restaurants {
 body main .restaurants img {
   width: 100%;
   height: 275px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 body footer {
   display: flex;
