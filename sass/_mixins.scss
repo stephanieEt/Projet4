@@ -1,0 +1,19 @@
+@mixin title-h1 {
+    font-size: 28px;
+    font-family: $font-logo-titre;
+    font-weight: 400;
+}
+
+@mixin title-h2 {
+    font-family: $font;
+    font-weight: 300;
+    font-size: 16px;
+    padding:20px 15px 15px 0px;     
+}
+
+@mixin line {
+    width: 43px;
+    height: 3px;
+    background-color: $thirdly;
+    margin-top: -9px;
+}

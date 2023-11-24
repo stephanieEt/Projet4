@@ -70,6 +70,10 @@ body header .header__choice button {
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   font-size: 16px;
   font-family: "roboto", "sans-serif";
+  background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
+  color: #EAEAEA;
+  border: none;
+  font-weight: 500;
 }
 body main .container {
   height: 440px;
@@ -100,7 +104,7 @@ body main .container .container__content span {
   margin-right: 320px;
   font-size: 14px;
 }
-body main .container .container__text {
+body main .container .container__content .container__content__text {
   border-radius: 20px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   height: 72px;
@@ -110,12 +114,19 @@ body main .container .container__text {
   justify-content: center;
   gap: 27px;
 }
-body main .container .container__text i {
+body main .container .container__content .container__content__text i {
   color: #7E7E7E;
   height: 17px;
   width: 19px;
+  font-size: 20px;
 }
-body main .container .container__text p {
+body main .container .container__content .container__content__text .left {
+  margin-left: 15px;
+}
+body main .container .container__content .container__content__text .purple {
+  color: #9356DC;
+}
+body main .container .container__content .container__content__text p {
   font-size: 16px;
   font-weight: 500;
 }
