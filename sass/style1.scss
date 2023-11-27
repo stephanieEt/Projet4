@@ -39,6 +39,7 @@ body {
             padding-left: 17px;
             position: relative;
             background-color: $background;
+            gap: 40px;
 
             .menu__title{
                 display: flex;
@@ -65,11 +66,45 @@ body {
                 }
 
                 .line {
-                    @include line
+                    @include line;
+                }
+                .menu__entree__list{
+                    @include space;
+                    .menu__entree__list__card{
+                        @include card;
+                        .menu__entree__list__card__text{
+                            @include cardText
+                        }
+                    }
                 }
             }
-        }                 
-    }
+                .menu__meal__list{
+                    @include space;
+                .menu__meal__list__card{
+                    @include card;
+                    .menu__meal__list__card__text{
+                        @include cardText;
+                    }
+                    }
+                }
+
+                .menu__dessert__list{
+                    @include space;
+                    .menu__dessert__list__card{
+                    @include card;
+                    .menu__dessert__list__card__text{
+                        @include cardText;
+                    }
+                    }
+                }
+                .indent{
+                    .command{
+                        @include button
+                        width
+                    }
+                } 
+            }                
+        }
     footer{    
         display: flex;
         flex-direction: column;

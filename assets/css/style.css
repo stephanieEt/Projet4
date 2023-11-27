@@ -22,7 +22,7 @@ body header .header__logo {
 }
 body header .header__logo img {
   padding: 0px 19px 0px 16px;
-  font-family: "Shrikhand";
+  font-family: "Shrikhand", "sans-serif";
 }
 body header .header__search {
   display: flex;
@@ -182,7 +182,7 @@ body footer {
   gap: 16px;
 }
 body footer h3 {
-  font-family: "Shrikhand";
+  font-family: "Shrikhand", "sans-serif";
   font-size: 18px;
   font-weight: 400;
 }
@@ -194,7 +194,7 @@ body footer .footer__list {
 body footer .footer__list .footer__list__icons a .fa-utensils {
   margin-right: 10px;
 }
-body footer .footer__list .footer__list__icons a .fa-handshake {
+body footer .footer__list .footer__list__icons1 a .fa-handshake {
   rotate: 325deg;
   margin-right: 4px;
 }
@@ -246,5 +246,21 @@ body footer .footer__list .footer__list__icons a .fa-handshake {
   body footer {
     display: flex;
     flex-direction: row-reverse;
+    gap: 40px;
+    padding: 30px 0px;
+    height: 114px;
+  }
+  body footer h3 {
+    margin: 8px 60px;
+  }
+  body footer .footer__list {
+    flex-direction: row;
+    margin-top: 19px;
+  }
+  body footer .footer__list .footer__list__icons1 {
+    margin-right: 40px;
+  }
+  body footer .footer__list .footer__list__others {
+    margin-right: 15px;
   }
 }/*# sourceMappingURL=style.css.map */
