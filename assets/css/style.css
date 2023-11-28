@@ -200,31 +200,36 @@ body footer .footer__list .footer__list__icons1 a .fa-handshake {
 }
 
 @media screen and (min-width: 768px) {
-  main .container .container__title {
+  body main .container .container__title {
     margin-left: -390px;
   }
-  main .container .container__content .container__content__card span {
+  body main .container .container__content .container__content__card span {
     margin-left: -8px;
   }
-  main .container .container__content .container__content__card .container__content__card__text {
+  body main .container .container__content .container__content__card .container__content__card__text {
     width: 586px;
   }
-  main .restaurants__cards {
+  body main .restaurants__cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
     -moz-column-gap: 100px;
          column-gap: 100px;
     row-gap: 50px;
   }
+  body footer .footer__list {
+    flex-direction: row;
+    gap: 45px;
+  }
 }
 @media screen and (min-width: 1024px) {
   body header .header__logo {
     box-shadow: none;
-    z-index: none;
-    background-color: #99e2d0;
   }
   body main .container {
     height: 205px;
+  }
+  body main .container .container__title {
+    margin-left: -550px;
   }
   body main .container .container__content {
     flex-direction: row;
@@ -232,7 +237,7 @@ body footer .footer__list .footer__list__icons1 a .fa-handshake {
     gap: 15px;
   }
   body main .container .container__content .container__content__card .container__content__card__text {
-    width: 295px;
+    width: 285px;
   }
   body main .restaurants {
     gap: 28px;

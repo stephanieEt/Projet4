@@ -10,12 +10,21 @@
     font-size: 16px;
     padding:20px 15px 15px 0px;     
 }
+@mixin title-h3 {
+    font-size: 18px;
+    font-weight: 500;
+}
+@mixin paragraph {
+    font-size: 15px;
+    font-weight: 300;
+}
 
 @mixin line {
     width: 43px;
     height: 3px;
     background-color: $thirdly;
     margin-top: -9px;
+    margin-bottom: 12px;
 }
 
 @mixin card {
@@ -31,7 +40,7 @@
 @mixin space {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
 }
 @mixin cardText {
         display: flex;
@@ -49,6 +58,12 @@
     color: $fourth;
     border: none;
     font-weight: 500;
+}
 
-
+@mixin down {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 40px;
+  padding: 30px 0px;
+  height: 114px;
 }

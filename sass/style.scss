@@ -228,7 +228,7 @@ body {
   
 
 @media screen and (min-width: 768px) {
-
+body{
 
   main{
 
@@ -249,18 +249,24 @@ body {
           }
         }
       }  
-   
-
-    
-       .restaurants__cards {
+          .restaurants__cards {
           display: grid;
           grid-template-columns: 1fr 1fr;
           column-gap: 100px;
           row-gap: 50px;
         }
-      
       }
+
+  footer {
+
+    .footer__list{
+      flex-direction: row;
+      gap: 45px;
     }
+  }
+    }
+  }  
+
 
 
 @media screen and (min-width: 1024px) {
@@ -268,16 +274,16 @@ body{
 
   header {
     .header__logo {
-      box-shadow: none;
-      z-index: none;
-      background-color: #99e2d0;
+      box-shadow: none;      
       }
     }
   main {
     .container {
       height: 205px;
 
-     
+      .container__title{
+        margin-left: -550px;
+      }
 
       .container__content { 
         flex-direction: row;
@@ -287,7 +293,7 @@ body{
         .container__content__card{
         
           .container__content__card__text{
-            width: 295px;
+            width: 285px;
           }
         }
       } 
