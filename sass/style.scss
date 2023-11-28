@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'mixins';
 
 * {
     margin: 0px;
@@ -71,28 +72,21 @@ body {
       }
 
       button {
-        border-radius: 25px;
-        height: 50px;
+        @include button;
         width: 218px;
-        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-        font-size: 16px;
-        font-family: $font;
-        background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
-        color: $fourth;
-        border: none;
-        font-weight: 500;
+        }
       }
     }
-  }
+  
 
   main{
+    padding: 4vw;
     .container {
       height: 440px;
       padding-top: 48px;
       display: flex;
       flex-direction: column;
       gap:26px;
-      align-items: center;
     
       .container__title {
         margin-right: 170px;
@@ -101,6 +95,7 @@ body {
         display: flex;
         flex-direction: column;
         gap: 20px;
+        align-items: center;
         
 
         span{
@@ -121,7 +116,7 @@ body {
               border-radius: 20px;
               box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
               height: 72px;
-              width: 322px;
+              width: 70vw;
               display: flex;
               align-items: center;
               justify-content: center;
@@ -151,7 +146,7 @@ body {
       display: flex;
       flex-direction: column;
       gap:18px;
-      padding: 50px 18px 66px 17px;
+      padding: 50px 0px;
 
       .restaurants__cards__content{
         display: flex;
@@ -206,8 +201,7 @@ body {
       font-family:$font-logo-titre;
       font-size: 18px;
       font-weight: 400;
-     
-    }
+      }
   
     .footer__list {
       display: flex;
@@ -234,12 +228,9 @@ body{
 
     .container{
 
-        .container__title {
-        margin-left: -390px;
-        }
-
         .container__content{
           .container__content__card {
+
             span{
               margin-left: -8px;
             }
@@ -278,36 +269,34 @@ body{
       }
     }
   main {
+    padding: 0px 8vw;
     .container {
       height: 205px;
+      align-items: normal;
 
       .container__title{
-        margin-left: -550px;
+        margin-right: 0px;
+        margin-left: 0px;
       }
 
       .container__content { 
         flex-direction: row;
         justify-content: center;
-        gap: 15px;
+        gap: 2vw;
 
         .container__content__card{
         
           .container__content__card__text{
-            width: 285px;
+            width: 26vw;
           }
         }
       } 
     }
     .restaurants{
       gap: 28px;
+      padding: 50px 0px;
+    }
 
-        .restaurants__title{
-          padding-left: 180px;
-        }
-    }
-    .restaurants__cards{
-      padding: 0px 180px 0px 180px;
-    }
   }
    
   footer {
