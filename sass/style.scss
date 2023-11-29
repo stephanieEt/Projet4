@@ -78,12 +78,11 @@ body {
       }
     }
   
-
   main{
     padding: 4vw;
     .container {
       height: 440px;
-      padding-top: 48px;
+      padding-top: 23px;
       display: flex;
       flex-direction: column;
       gap:26px;
@@ -97,7 +96,6 @@ body {
         gap: 20px;
         align-items: center;
         
-
         span{
             display: flex;
             position: absolute;
@@ -252,11 +250,10 @@ body{
 
     .footer__list{
       flex-direction: row;
-      gap: 45px;
+      }
     }
   }
-    }
-  }  
+}  
 
 
 

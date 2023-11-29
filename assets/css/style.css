@@ -74,7 +74,7 @@ body header .header__choice button {
   color: #EAEAEA;
   border: none;
   font-weight: 500;
-  transition: 400ms;
+  transition: 500ms;
   width: 218px;
 }
 body header .header__choice button:hover {
@@ -86,7 +86,7 @@ body main {
 }
 body main .container {
   height: 440px;
-  padding-top: 48px;
+  padding-top: 23px;
   display: flex;
   flex-direction: column;
   gap: 26px;
@@ -223,7 +223,6 @@ body footer .footer__list .footer__list__icons1 a .fa-handshake {
   }
   body footer .footer__list {
     flex-direction: row;
-    gap: 45px;
   }
 }
 @media screen and (min-width: 1024px) {

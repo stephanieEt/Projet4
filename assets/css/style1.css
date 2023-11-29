@@ -62,7 +62,6 @@ body main .menu .menu__title h1 {
 }
 body main .menu .menu__title .menu__title__heart i {
   cursor: pointer;
-  position: absolute;
   top: 32px;
   right: 35px;
   font-size: 1.5rem;
@@ -179,7 +178,7 @@ body main .menu .indent .command {
   color: #EAEAEA;
   border: none;
   font-weight: 500;
-  transition: 400ms;
+  transition: 500ms;
   width: 186px;
   margin-bottom: 40px;
 }
@@ -208,7 +207,7 @@ body footer .footer__list {
 body footer .footer__list .footer__list__icons a .fa-utensils {
   margin-right: 10px;
 }
-body footer .footer__list .footer__list__icons a .fa-handshake {
+body footer .footer__list .footer__list__icons1 a .fa-handshake {
   rotate: 325deg;
   margin-right: 4px;
 }

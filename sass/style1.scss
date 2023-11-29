@@ -63,8 +63,7 @@ body {
                 }
             
                 .menu__title__heart i {
-                    cursor: pointer;
-                    position: absolute;
+                    cursor: pointer;                    
                     top: 32px;
                     right: 35px;
                     font-size: 1.5rem;
@@ -161,7 +160,7 @@ body {
         .footer__list__icons a .fa-utensils{
             margin-right: 10px;
         }
-        .footer__list__icons a .fa-handshake{
+        .footer__list__icons1 a .fa-handshake{
             rotate: 325deg;
             margin-right: 4px;
         }
