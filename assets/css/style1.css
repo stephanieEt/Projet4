@@ -60,11 +60,38 @@ body main .menu .menu__title h1 {
   font-family: "Shrikhand", "sans-serif";
   font-weight: 400;
 }
+body main .menu .menu__title .menu__title__heart {
+  padding-bottom: 22px;
+}
 body main .menu .menu__title .menu__title__heart i {
-  cursor: pointer;
-  top: 32px;
-  right: 35px;
+  position: absolute;
   font-size: 1.5rem;
+  cursor: pointer;
+}
+body main .menu .menu__title .menu__title__heart .full {
+  opacity: 0;
+  transition: all 600ms;
+}
+body main .menu .menu__title .menu__title__heart .full:hover {
+  opacity: 1;
+  color: transparent;
+  background-image: linear-gradient(201deg, #9356DC -5.2%, #FF79DA 110.74%);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+body main .menu .menu__entree {
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
+}
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 body main .menu .menu__entree h2 {
   font-family: "roboto", "sans-serif";
@@ -99,6 +126,20 @@ body main .menu .menu__entree .menu__entree__list .menu__entree__list__card .men
   flex-direction: column;
   gap: 5px;
 }
+body main .menu .menu__meal {
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+}
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 body main .menu .menu__meal h2 {
   font-family: "roboto", "sans-serif";
   font-weight: 300;
@@ -131,6 +172,20 @@ body main .menu .menu__meal .menu__meal__list .menu__meal__list__card .menu__mea
   display: flex;
   flex-direction: column;
   gap: 5px;
+}
+body main .menu .menu__dessert {
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 3s;
+}
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 body main .menu .menu__dessert h2 {
   font-family: "roboto", "sans-serif";

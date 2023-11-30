@@ -62,15 +62,23 @@ body {
                     @include title-h1
                 }
             
-                .menu__title__heart i {
-                    cursor: pointer;                    
-                    top: 32px;
-                    right: 35px;
+                .menu__title__heart{ 
+                    padding-bottom: 22px;  
+                    
+                   i {
+                    position: absolute;                                       
                     font-size: 1.5rem;
+                    cursor: pointer;                    
+                    }
+                    .full{
+                        @include heart;
+                    }
                 }
             }
             .menu__entree {
-                
+                @include fondu;
+                animation-duration: 1s;
+	    
                 h2 {
                     @include title-h2;
                 }
@@ -89,6 +97,8 @@ body {
                 }
             }
             .menu__meal{
+                @include fondu;
+                animation-duration: 2s;
 
                 h2 {
                     @include title-h2;
@@ -109,6 +119,8 @@ body {
                 }
             }
             .menu__dessert{
+                @include fondu;
+                animation-duration: 3s;
                 h2 {
                     @include title-h2;
                 }

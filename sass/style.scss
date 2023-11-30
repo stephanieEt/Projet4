@@ -11,6 +11,55 @@
 body {
     margin: 0px;
     font-family: $font;
+
+    .content-site{
+      animation-name: page;
+      animation-duration:2s;
+      animation-fill-mode: both;
+    }
+
+    @keyframes page {
+      0%{ 
+      opacity: 0;
+      }
+      95%{
+        opacity: 0;
+      }
+      100%{
+        opacity: 1;
+      }
+    }
+
+    .loader{    
+      border-top: 10px solid $primary;
+      border-bottom:10px solid $secondary;
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      margin: auto;
+      position: absolute;
+      top:0; bottom: 0; right: 0; left:0;
+      animation-name: round;
+      animation-duration:2s;
+      animation-fill-mode: both;
+      animation-timing-function:linear;
+    }
+   
+    @keyframes round {
+      0%{ 
+      transform:rotate(0deg);
+      opacity: 1;
+      }
+
+      80%{
+        opacity:1;
+      }
+      
+      100%{
+        transform:rotate(360deg);
+        opacity: 0;
+      }
+    }
   
   header {
     display: flex;
@@ -183,6 +232,31 @@ body {
           flex-direction: column;
           gap: 5px;
         }
+        .restaurants__cards__content__card1__heart{
+          padding-right: 18px;
+
+          i{
+            position: absolute;
+            font-size: 1.5rem;
+            cursor: pointer;
+          }
+
+            .full {
+              opacity:0;
+              transition: all 600ms;
+
+              &:hover{
+                opacity: 1;
+                color: transparent;
+                background-image:linear-gradient(201deg, $primary -5.2%, $secondary 110.74%);
+                background-clip: text;
+                -webkit-background-clip: text;
+              }
+            }
+
+            
+          
+        }
       }
     }
   }
@@ -323,10 +397,3 @@ body{
 }
 }
 }  
-
-
-
-
-
-
-
