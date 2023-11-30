@@ -80,13 +80,17 @@ body main .menu .menu__title .menu__title__heart .full:hover {
   -webkit-background-clip: text;
 }
 body main .menu .menu__entree {
-  animation-name: fadeInOpacity;
+  animation-name: fonduText;
   animation-iteration-count: 1;
   animation-timing-function: ease-in;
-  animation-duration: 1s;
+  animation-delay: -0.5s;
+  animation-duration: 1.5s;
 }
-@keyframes fadeInOpacity {
+@keyframes fonduText {
   0% {
+    opacity: 0;
+  }
+  50% {
     opacity: 0;
   }
   100% {
@@ -127,13 +131,18 @@ body main .menu .menu__entree .menu__entree__list .menu__entree__list__card .men
   gap: 5px;
 }
 body main .menu .menu__meal {
-  animation-name: fadeInOpacity;
+  animation-name: fonduText;
   animation-iteration-count: 1;
   animation-timing-function: ease-in;
+  animation-delay: 0.25s;
   animation-duration: 2s;
+  animation-fill-mode: both;
 }
-@keyframes fadeInOpacity {
+@keyframes fonduText {
   0% {
+    opacity: 0;
+  }
+  50% {
     opacity: 0;
   }
   100% {
@@ -174,13 +183,18 @@ body main .menu .menu__meal .menu__meal__list .menu__meal__list__card .menu__mea
   gap: 5px;
 }
 body main .menu .menu__dessert {
-  animation-name: fadeInOpacity;
+  animation-name: fonduText;
   animation-iteration-count: 1;
   animation-timing-function: ease-in;
-  animation-duration: 3s;
+  animation-delay: 1s;
+  animation-duration: 2s;
+  animation-fill-mode: both;
 }
-@keyframes fadeInOpacity {
+@keyframes fonduText {
   0% {
+    opacity: 0;
+  }
+  50% {
     opacity: 0;
   }
   100% {

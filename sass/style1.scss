@@ -77,7 +77,8 @@ body {
             }
             .menu__entree {
                 @include fondu;
-                animation-duration: 1s;
+                animation-delay: -0.50s;
+                animation-duration: 1.5s;
 	    
                 h2 {
                     @include title-h2;
@@ -98,7 +99,9 @@ body {
             }
             .menu__meal{
                 @include fondu;
+                animation-delay: 0.25s;
                 animation-duration: 2s;
+                animation-fill-mode: both;
 
                 h2 {
                     @include title-h2;
@@ -120,7 +123,10 @@ body {
             }
             .menu__dessert{
                 @include fondu;
-                animation-duration: 3s;
+                animation-delay: 1s;
+                animation-duration: 2s;
+                animation-fill-mode: both;
+                
                 h2 {
                     @include title-h2;
                 }
