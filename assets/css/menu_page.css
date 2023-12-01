@@ -49,6 +49,72 @@ body main .menu {
   background-color: #F6F6F6;
   gap: 40px;
 }
+body main .menu h2 {
+  font-family: "roboto", "sans-serif";
+  font-weight: 300;
+  font-size: 16px;
+  padding: 20px 15px 15px 0px;
+}
+body main .menu .line {
+  width: 43px;
+  height: 3px;
+  background-color: #99E2D0;
+  margin-top: -9px;
+  margin-bottom: 12px;
+}
+body main .menu .menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+body main .menu .menu__list .menu__list__card {
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  height: 72px;
+  width: 100%;
+  margin: 0px -5px 0px -5px;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+}
+body main .menu .menu__list .menu__list__card:hover .menu__list__card__price {
+  transform: translateX(-60px);
+  transition-duration: 1s;
+}
+body main .menu .menu__list .menu__list__card .menu__list__card__text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+body main .menu .menu__list .menu__list__card .menu__list__card__price {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 1s ease-in-out;
+}
+body main .menu .menu__list .menu__list__card .menu__list__card__price p {
+  display: flex;
+  align-items: end;
+  font-weight: 700;
+}
+body main .menu .menu__list .menu__list__card .menu__list__card__price span {
+  position: absolute;
+  display: flex;
+  width: 60px;
+  height: 72px;
+  background-color: #99E2D0;
+  justify-content: center;
+  align-items: center;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  transform: translateX(60px);
+}
+body main .menu .menu__list .menu__list__card .menu__list__card__price span i {
+  font-size: 19px;
+  color: white;
+}
 body main .menu .menu__title {
   display: flex;
   align-items: center;
@@ -97,72 +163,6 @@ body main .menu .menu__entree {
     opacity: 1;
   }
 }
-body main .menu .menu__entree h2 {
-  font-family: "roboto", "sans-serif";
-  font-weight: 300;
-  font-size: 16px;
-  padding: 20px 15px 15px 0px;
-}
-body main .menu .menu__entree .line {
-  width: 43px;
-  height: 3px;
-  background-color: #99E2D0;
-  margin-top: -9px;
-  margin-bottom: 12px;
-}
-body main .menu .menu__entree .menu__entree__list {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-body main .menu .menu__entree .menu__entree__list .menu__entree__list__card {
-  overflow: hidden;
-  border-radius: 20px;
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-  height: 72px;
-  width: 100%;
-  margin: 0px -5px 0px -5px;
-  display: flex;
-  justify-content: space-between;
-  padding: 12px;
-}
-body main .menu .menu__entree .menu__entree__list .menu__entree__list__card:hover .menu__entree__list__card__price {
-  transform: translateX(-60px);
-  transition-duration: 1s;
-}
-body main .menu .menu__entree .menu__entree__list .menu__entree__list__card .menu__entree__list__card__text {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-body main .menu .menu__entree .menu__entree__list .menu__entree__list__card .menu__entree__list__card__price {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: transform 1s ease-in-out;
-}
-body main .menu .menu__entree .menu__entree__list .menu__entree__list__card .menu__entree__list__card__price p {
-  display: flex;
-  align-items: end;
-  font-weight: 700;
-}
-body main .menu .menu__entree .menu__entree__list .menu__entree__list__card .menu__entree__list__card__price span {
-  position: absolute;
-  display: flex;
-  width: 60px;
-  height: 72px;
-  background-color: #99E2D0;
-  justify-content: center;
-  align-items: center;
-  border-bottom-right-radius: 20px;
-  border-top-right-radius: 20px;
-  transform: translateX(60px);
-}
-body main .menu .menu__entree .menu__entree__list .menu__entree__list__card .menu__entree__list__card__price span i {
-  font-size: 19px;
-  color: white;
-}
 body main .menu .menu__meal {
   animation-name: fonduText;
   animation-iteration-count: 1;
@@ -182,39 +182,6 @@ body main .menu .menu__meal {
     opacity: 1;
   }
 }
-body main .menu .menu__meal h2 {
-  font-family: "roboto", "sans-serif";
-  font-weight: 300;
-  font-size: 16px;
-  padding: 20px 15px 15px 0px;
-}
-body main .menu .menu__meal .line {
-  width: 43px;
-  height: 3px;
-  background-color: #99E2D0;
-  margin-top: -9px;
-  margin-bottom: 12px;
-}
-body main .menu .menu__meal .menu__meal__list {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-body main .menu .menu__meal .menu__meal__list .menu__meal__list__card {
-  border-radius: 20px;
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-  height: 72px;
-  width: 100%;
-  margin: 0px -5px 0px -5px;
-  display: flex;
-  justify-content: space-between;
-  padding: 12px;
-}
-body main .menu .menu__meal .menu__meal__list .menu__meal__list__card .menu__meal__list__card__text {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
 body main .menu .menu__dessert {
   animation-name: fonduText;
   animation-iteration-count: 1;
@@ -233,39 +200,6 @@ body main .menu .menu__dessert {
   100% {
     opacity: 1;
   }
-}
-body main .menu .menu__dessert h2 {
-  font-family: "roboto", "sans-serif";
-  font-weight: 300;
-  font-size: 16px;
-  padding: 20px 15px 15px 0px;
-}
-body main .menu .menu__dessert .line {
-  width: 43px;
-  height: 3px;
-  background-color: #99E2D0;
-  margin-top: -9px;
-  margin-bottom: 12px;
-}
-body main .menu .menu__dessert .menu__dessert__list {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-body main .menu .menu__dessert .menu__dessert__list .menu__dessert__list__card {
-  border-radius: 20px;
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-  height: 72px;
-  width: 100%;
-  margin: 0px -5px 0px -5px;
-  display: flex;
-  justify-content: space-between;
-  padding: 12px;
-}
-body main .menu .menu__dessert .menu__dessert__list .menu__dessert__list__card .menu__dessert__list__card__text {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
 }
 body main .menu .indent {
   text-align: center;
@@ -324,13 +258,13 @@ body footer .footer__list .footer__list__icons1 a .fa-handshake {
     align-items: center;
     width: 80%;
   }
-  body main .menu .menu__entree .menu__entree__list {
+  body main .menu .menu__entree .menu__list {
     width: 634px;
   }
-  body main .menu .menu__meal .menu__meal__list {
+  body main .menu .menu__meal .menu__list {
     width: 634px;
   }
-  body main .menu .menu__dessert .menu__dessert__list {
+  body main .menu .menu__dessert .menu__list {
     width: 634px;
   }
   body footer {
@@ -353,4 +287,4 @@ body footer .footer__list .footer__list__icons1 a .fa-handshake {
   body footer .footer__list .footer__list__others {
     margin-right: 15px;
   }
-}/*# sourceMappingURL=style1.css.map */
+}/*# sourceMappingURL=menu_page.css.map */
