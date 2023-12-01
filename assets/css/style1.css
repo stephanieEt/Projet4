@@ -116,6 +116,7 @@ body main .menu .menu__entree .menu__entree__list {
   gap: 12px;
 }
 body main .menu .menu__entree .menu__entree__list .menu__entree__list__card {
+  overflow: hidden;
   border-radius: 20px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   height: 72px;
@@ -125,10 +126,42 @@ body main .menu .menu__entree .menu__entree__list .menu__entree__list__card {
   justify-content: space-between;
   padding: 12px;
 }
+body main .menu .menu__entree .menu__entree__list .menu__entree__list__card:hover .menu__entree__list__card__price {
+  transform: translateX(-60px);
+  transition-duration: 1s;
+}
 body main .menu .menu__entree .menu__entree__list .menu__entree__list__card .menu__entree__list__card__text {
   display: flex;
   flex-direction: column;
   gap: 5px;
+}
+body main .menu .menu__entree .menu__entree__list .menu__entree__list__card .menu__entree__list__card__price {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 1s ease-in-out;
+}
+body main .menu .menu__entree .menu__entree__list .menu__entree__list__card .menu__entree__list__card__price p {
+  display: flex;
+  align-items: end;
+  font-weight: 700;
+}
+body main .menu .menu__entree .menu__entree__list .menu__entree__list__card .menu__entree__list__card__price span {
+  position: absolute;
+  display: flex;
+  width: 60px;
+  height: 72px;
+  background-color: #99E2D0;
+  justify-content: center;
+  align-items: center;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  transform: translateX(60px);
+}
+body main .menu .menu__entree .menu__entree__list .menu__entree__list__card .menu__entree__list__card__price span i {
+  font-size: 19px;
+  color: white;
 }
 body main .menu .menu__meal {
   animation-name: fonduText;
