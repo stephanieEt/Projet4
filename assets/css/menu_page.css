@@ -80,7 +80,6 @@ body main .menu .menu__list .menu__list__card {
 }
 body main .menu .menu__list .menu__list__card:hover .menu__list__card__price {
   transform: translateX(-60px);
-  transition-duration: 1s;
 }
 body main .menu .menu__list .menu__list__card .menu__list__card__text {
   display: flex;
@@ -138,12 +137,12 @@ body main .menu .menu__title .menu__title__heart {
 }
 body main .menu .menu__title .menu__title__heart i {
   position: absolute;
-  font-size: 1.5rem;
+  font-size: 24px;
   cursor: pointer;
 }
 body main .menu .menu__title .menu__title__heart .full {
   opacity: 0;
-  transition: all 600ms;
+  transition: 500ms;
 }
 body main .menu .menu__title .menu__title__heart .full:hover {
   opacity: 1;
@@ -265,15 +264,14 @@ body footer .footer__list .footer__list__icons1 a .fa-handshake {
     align-items: center;
     width: 80%;
   }
-  body main .menu .menu__entree .menu__list {
+  body main .menu .menu__list {
     width: 634px;
   }
-  body main .menu .menu__meal .menu__list {
-    width: 634px;
+  body footer .footer__list {
+    flex-direction: row;
   }
-  body main .menu .menu__dessert .menu__list {
-    width: 634px;
-  }
+}
+@media screen and (min-width: 1024px) {
   body footer {
     display: flex;
     flex-direction: row-reverse;
