@@ -142,14 +142,14 @@ body main .menu .menu__title .menu__title__heart i {
 }
 body main .menu .menu__title .menu__title__heart .full {
   opacity: 0;
-  transition: 500ms;
-}
-body main .menu .menu__title .menu__title__heart .full:hover {
-  opacity: 1;
   color: transparent;
   background-image: linear-gradient(201deg, #9356DC -5.2%, #FF79DA 110.74%);
   background-clip: text;
   -webkit-background-clip: text;
+  transition: opacity 500ms;
+}
+body main .menu .menu__title .menu__title__heart .full:hover {
+  opacity: 1;
 }
 body main .menu .menu__entree {
   animation-name: fonduText;
