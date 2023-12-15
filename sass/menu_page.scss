@@ -22,7 +22,7 @@ body {
     margin: 0px;
     font-family: $font;
     
-    header {
+    header{
         display: flex;
         gap:42px;
         padding: 14px 89px 14px 17px;
@@ -86,7 +86,7 @@ body {
                     padding: 12px;
                 
                     &:hover .menu__list__card__price{
-                        transform: translateX(-60px);                        
+                        transform: translateX(-60px);                      
                     }
 
                     .menu__list__card__text{
@@ -186,7 +186,7 @@ body {
             .indent{
                 text-align: center;
 
-                .command{
+                .button{
                     @include button;
                     width: 186px;
                     margin-bottom: 40px;                        
@@ -195,7 +195,7 @@ body {
         }                
     }
 
-    footer {    
+    footer{    
         @include footerMobile;
     } 
 }
