@@ -3,6 +3,9 @@
     flex-direction: column;
 }
 @mixin button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 25px;
     height: 50px;
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
@@ -12,7 +15,7 @@
     color: $fourth;
     border: none;
     font-weight: 500;
-    transition: 500ms;
+    transition: all 500ms;
 
     &:hover{
         box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
@@ -42,7 +45,7 @@
             margin-right: 10px;
         }
         .footer__list__icons1 a .fa-handshake {
-            rotate: 325deg;
+            transform: rotate(325deg);
             margin-right: 4px;
         }
     }
