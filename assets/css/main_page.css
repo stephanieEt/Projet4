@@ -50,6 +50,7 @@ body .loader {
   100% {
     transform: rotate(360deg);
     opacity: 0;
+    display: none;
   }
 }
 body header {

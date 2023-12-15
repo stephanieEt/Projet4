@@ -208,7 +208,8 @@ body main .menu .menu__dessert {
   }
 }
 body main .menu .indent {
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 body main .menu .indent .button {
   display: flex;
