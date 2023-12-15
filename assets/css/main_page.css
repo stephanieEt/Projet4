@@ -236,14 +236,14 @@ body main .restaurants .restaurants__cards__content__card1 .restaurants__cards__
 }
 body main .restaurants .restaurants__cards__content__card1 .restaurants__cards__content__card1__heart .full {
   opacity: 0;
-  transition: 500ms;
-}
-body main .restaurants .restaurants__cards__content__card1 .restaurants__cards__content__card1__heart .full:hover {
-  opacity: 1;
   color: transparent;
   background-image: linear-gradient(201deg, #9356DC -5.2%, #FF79DA 110.74%);
   background-clip: text;
   -webkit-background-clip: text;
+  transition: opacity 500ms;
+}
+body main .restaurants .restaurants__cards__content__card1 .restaurants__cards__content__card1__heart .full:hover {
+  opacity: 1;
 }
 body footer {
   display: flex;
