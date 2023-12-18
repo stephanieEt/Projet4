@@ -22,7 +22,7 @@ body {
 body header {
   display: flex;
   gap: 42px;
-  padding: 14px 89px 14px 17px;
+  padding: 14px 20vw 14px 17px;
   justify-content: center;
 }
 body header .header__logo {
@@ -126,6 +126,7 @@ body main .menu .menu__title {
   align-items: center;
   gap: 50px;
   padding-top: 25px;
+  justify-content: center;
 }
 body main .menu .menu__title h1 {
   font-size: 27px;
@@ -134,7 +135,7 @@ body main .menu .menu__title h1 {
 }
 body main .menu .menu__title .menu__title__heart {
   padding-bottom: 22px;
-  margin-right: 44px;
+  margin-right: 50px;
 }
 body main .menu .menu__title .menu__title__heart i {
   position: absolute;
