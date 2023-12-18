@@ -128,12 +128,13 @@ body main .menu .menu__title {
   padding-top: 25px;
 }
 body main .menu .menu__title h1 {
-  font-size: 28px;
+  font-size: 27px;
   font-family: "Shrikhand", "sans-serif";
   font-weight: 400;
 }
 body main .menu .menu__title .menu__title__heart {
   padding-bottom: 22px;
+  margin-right: 44px;
 }
 body main .menu .menu__title .menu__title__heart i {
   position: absolute;
