@@ -8,12 +8,12 @@
     color: inherit;
 }
 
-h3{
+h3 {
     font-size: 18px;
     font-weight: 500;
 }
 
-p{
+p {
     font-size: 15px;
     font-weight: 300;
 }
@@ -21,31 +21,31 @@ p{
 body {
     margin: 0px;
     font-family: $font;
-    
-    header{
+
+    header {
         display: flex;
-        gap:42px;
+        gap: 42px;
         padding: 14px 20vw 14px 17px;
         justify-content: center;
 
-        .header__logo{
+        .header__logo {
             margin-right: auto;
         }
     }
 
-    main{
-        .restaurants{
-            height:275px;
+    main {
+        .restaurants {
+            height: 275px;
             width: 100%;
-        
-            img{
+
+            img {
                 width: 100%;
                 height: 275px;
                 object-fit: cover;
             }
         }
 
-        .menu {            
+        .menu {
             border-radius: 35px 35px 0 0;
             @include direction;
             width: 100%;
@@ -59,7 +59,7 @@ body {
                 font-family: $font;
                 font-weight: 300;
                 font-size: 16px;
-                padding:20px 15px 15px 0px; 
+                padding: 20px 15px 15px 0px;
             }
 
             .line {
@@ -70,30 +70,30 @@ body {
                 margin-bottom: 12px;
             }
 
-            .menu__list{
+            .menu__list {
                 @include direction;
                 gap: 12px;
 
-                .menu__list__card{
+                .menu__list__card {
                     overflow: hidden;
                     border-radius: 20px;
-                    box-shadow: 0px 4px 15px 0px rgba(0,0,0,.15);
+                    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, .15);
                     height: 72px;
                     width: 100%;
                     margin: 0px -5px 0px -5px;
                     display: flex;
                     justify-content: space-between;
                     padding: 12px;
-                
-                    &:hover .menu__list__card__price{
-                        transform: translateX(-60px);                      
+
+                    &:hover .menu__list__card__price {
+                        transform: translateX(-60px);
                     }
 
-                    .menu__list__card__text{
+                    .menu__list__card__text {
                         @include direction;
                         gap: 5px;
 
-                        p{
+                        p {
                             overflow: hidden;
                             text-overflow: ellipsis;
                             white-space: nowrap;
@@ -101,21 +101,21 @@ body {
                         }
                     }
 
-                    .menu__list__card__price{
+                    .menu__list__card__price {
                         position: relative;
                         display: flex;
                         justify-content: center;
                         align-items: center;
                         transition: transform 1s ease-in-out;
 
-                        p{
+                        p {
                             display: flex;
                             align-items: end;
                             font-weight: 700;
                             padding-top: 25px;
                         }
 
-                        span{
+                        span {
                             position: absolute;
                             display: flex;
                             width: 60px;
@@ -127,7 +127,7 @@ body {
                             border-top-right-radius: 20px;
                             transform: translateX(60px);
 
-                            i{
+                            i {
                                 font-size: 19px;
                                 color: white;
                             }
@@ -136,30 +136,30 @@ body {
                 }
             }
 
-            .menu__title{
+            .menu__title {
                 display: flex;
                 align-items: center;
                 gap: 50px;
                 padding-top: 25px;
-                justify-content:center;
+                justify-content: center;
 
                 h1 {
                     font-size: 27px;
                     font-family: $font-logo-titre;
                     font-weight: 400;
                 }
-            
-                .menu__title__heart{ 
+
+                .menu__title__heart {
                     padding-bottom: 22px;
                     margin-right: 50px;
 
                     i {
-                        position: absolute;                                       
+                        position: absolute;
                         font-size: 24px;
-                        cursor: pointer;                    
+                        cursor: pointer;
                     }
 
-                    .full{
+                    .full {
                         @include heart;
                     }
                 }
@@ -171,39 +171,40 @@ body {
                 animation-duration: 1.5s;
             }
 
-            .menu__meal{
+            .menu__meal {
                 @include fondu;
                 animation-delay: 0.25s;
                 animation-duration: 2s;
                 animation-fill-mode: both;
             }
 
-            .menu__dessert{
+            .menu__dessert {
                 @include fondu;
                 animation-delay: 1s;
                 animation-duration: 2s;
                 animation-fill-mode: both;
             }
 
-            .indent{
+            .indent {
                 display: flex;
                 justify-content: center;
-                .button{
+
+                .button {
                     @include button;
                     width: 186px;
-                    margin-bottom: 40px;                        
+                    margin-bottom: 40px;
                 }
-            } 
-        }                
+            }
+        }
     }
 
-    footer{    
+    footer {
         @include footerMobile;
-    } 
+    }
 }
 
-@media screen and (min-width: 768px){
-    body{
+@media screen and (min-width: 768px) {
+    body {
 
         main {
             @include direction;
@@ -213,7 +214,7 @@ body {
                 align-items: center;
                 width: 80%;
 
-                .menu__list{
+                .menu__list {
                     width: 634px;
                 }
             }
@@ -225,11 +226,10 @@ body {
     }
 }
 
-@media screen and (min-width: 1024px){
-    body{
+@media screen and (min-width: 1024px) {
+    body {
         footer {
             @include footerDesktop;
         }
     }
 }
-    
