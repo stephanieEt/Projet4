@@ -134,14 +134,12 @@ body {
   }
 
   main {
-    padding: 4vw;
-
     .container {
       height: 440px;
-      padding-top: 23px;
       @include direction;
       gap: 26px;
       background-color: $colorCard;
+      padding: 4vw;
 
       .container__title {
         margin-right: 170px;
@@ -202,7 +200,7 @@ body {
     .restaurants {
       @include direction;
       gap: 18px;
-      padding: 50px 0px;
+      padding: 4vw;
 
 
       .restaurants__cards {
@@ -325,11 +323,10 @@ body {
     }
 
     main {
-      padding: 0px 8vw;
-
       .container {
         height: 205px;
         align-items: normal;
+        padding: 0px 8vw;
 
         .container__title {
           margin-right: 0px;
@@ -352,7 +349,7 @@ body {
 
       .restaurants {
         gap: 28px;
-        padding: 50px 0px;
+        padding: 0px 8vw;
       }
     }
 
